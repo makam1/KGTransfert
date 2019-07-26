@@ -39,11 +39,11 @@ class PartenaireController extends AbstractController
             $entityManager->persist($partenaire);
             $entityManager->flush();
 
-            return $this->redirectToRoute('partenaire_index');
+            
         }
 
         return $this->render('partenaire/new.html.twig', [
-            'partenaire' => $partenaire,
+            
             'form' => $form->createView(),
         ]);
     }
