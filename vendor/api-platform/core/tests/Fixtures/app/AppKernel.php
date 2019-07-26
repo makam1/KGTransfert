@@ -59,6 +59,8 @@ class AppKernel extends Kernel
             new SecurityBundle(),
             new FOSUserBundle(),
             new WebProfilerBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+
         ];
 
         if (class_exists(DoctrineMongoDBBundle::class)) {

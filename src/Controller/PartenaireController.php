@@ -3,12 +3,17 @@
 namespace App\Controller;
 
 use App\Entity\Partenaire;
+use App\Entity\Utilisateur;
 use App\Form\PartenaireType;
 use App\Repository\PartenaireRepository;
+use App\Repository\UtilisateurRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\SerializerInterface;
+use Doctrine\ORM\EntityManagerInterface;
+
 
 /**
  * @Route("/partenaire")
@@ -28,16 +33,17 @@ class PartenaireController extends AbstractController
     /**
      * @Route("/new", name="partenaire_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {
         $partenaire = new Partenaire();
         $form = $this->createForm(PartenaireType::class, $partenaire);
-        $form->handleRequest($request);
+        $data=json_decode($request->getContent(),true);
+        $form->submit($data);
 
-        if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($partenaire);
             $entityManager->flush();
+<<<<<<< HEAD
 
             
         }
@@ -46,6 +52,10 @@ class PartenaireController extends AbstractController
             
             'form' => $form->createView(),
         ]);
+=======
+        
+        return new Response('Le partenaire a été ajouté',Response::HTTP_CREATED);
+>>>>>>> c9b51a35ebb6e7eee6432a2dfe48a2f78c3b5e6a
     }
 
     /**
