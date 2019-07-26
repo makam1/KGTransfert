@@ -19,6 +19,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Guard\AbstractGuardAuthenticator;
 
 
+
 /**
  * @Route("/api")
  */
@@ -76,20 +77,6 @@ class SecurityController extends AbstractController
         ]);
 
     }
-    /**
-     * @Route("/login", name="login", methods={"POST"})
-     * @return JsonResponse
-     */
-    public function loginmak():JsonResponse
-
-    {    
-        $login =$this->getUser();
-       
-        return $this->json([
-            'login' => $login->getUsername(),
-            'roles' => $login->getRoles()
-        ]);
-
-    }
+    
   }
 
