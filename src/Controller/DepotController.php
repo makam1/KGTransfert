@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Depot;
 use App\Form\DepotType;
+use App\Entity\Compte;
 use App\Repository\DepotRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -33,14 +34,17 @@ class DepotController extends AbstractController
     public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {
         $depot = new Depot();
+        //$compte = new Compte();
         $form = $this->createForm(DepotType::class,$depot);
         $data=json_decode($request->getContent(), true);
-        
+
         $form->submit($data);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($depot);
             $entityManager->flush();
+
+            
         
         return new Response('Le dépôt a été effectué',Response::HTTP_CREATED);
     }
