@@ -56,7 +56,7 @@ class Utilisateur implements UserInterface
     private $statut;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\partenaire", inversedBy="no")
+     * @ORM\ManyToOne(targetEntity="Partenaire", inversedBy="no")
      * @ORM\JoinColumn(nullable=false)
      */
     private $partenaire;

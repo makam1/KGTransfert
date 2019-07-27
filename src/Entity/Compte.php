@@ -29,7 +29,7 @@ class Compte
     private $solde;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\partenaire", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Partenaire", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $partenaire;

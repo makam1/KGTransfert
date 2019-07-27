@@ -36,7 +36,7 @@ class Partenaire
     private $adresse;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\utilisateur", mappedBy="partenaire")
+     * @ORM\OneToMany(targetEntity="App\Entity\Utilisateur", mappedBy="partenaire")
      */
     private $utilisateur;
 
