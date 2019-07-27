@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Compte;
 use App\Form\CompteType;
 use App\Repository\CompteRepository;
+use App\Repository\PartenaireRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,13 +29,14 @@ class CompteController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="compte_new", methods={"GET","POST"})
+     * @Route("/new", name="comptenew", methods={"GET","POST"})
      */
     public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {
         $compte = new Compte();
-        $form = $this->createForm(CompteType::class, $compte);
-        $data=json_decode($request->getContent(),true);
+        $form = $this->createForm(CompteType::class,$compte);
+        $data=json_decode($request->getContent(), true);
+        
         $form->submit($data);
 
             $entityManager = $this->getDoctrine()->getManager();

@@ -204,6 +204,6 @@ class __TwigTemplate_6df4140c09d93a6250d5419d2defbb0471311b965c72beb8298209f3b76
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/home/mak/filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

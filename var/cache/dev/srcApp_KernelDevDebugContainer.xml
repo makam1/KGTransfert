@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
+<<<<<<< HEAD
     <parameter key="kernel.root_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert/src</parameter>
     <parameter key="kernel.project_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert</parameter>
     <parameter key="kernel.environment">dev</parameter>
@@ -8,6 +9,15 @@
     <parameter key="kernel.name">src</parameter>
     <parameter key="kernel.cache_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/log</parameter>
+=======
+    <parameter key="kernel.root_dir">/home/mak/Filrouge/src</parameter>
+    <parameter key="kernel.project_dir">/home/mak/Filrouge</parameter>
+    <parameter key="kernel.environment">dev</parameter>
+    <parameter key="kernel.debug">true</parameter>
+    <parameter key="kernel.name">src</parameter>
+    <parameter key="kernel.cache_dir">/home/mak/Filrouge/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/home/mak/Filrouge/var/log</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="WebServerBundle">Symfony\Bundle\WebServerBundle\WebServerBundle</parameter>
@@ -26,6 +36,7 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
+<<<<<<< HEAD
         <parameter key="path">/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
@@ -79,6 +90,61 @@
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
         <parameter key="path">/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/sensio/framework-extra-bundle</parameter>
+=======
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/framework-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
+      </parameter>
+      <parameter key="WebServerBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/web-server-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
+      </parameter>
+      <parameter key="TwigBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/twig-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
+      </parameter>
+      <parameter key="SecurityBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/security-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
+      </parameter>
+      <parameter key="NelmioCorsBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/nelmio/cors-bundle</parameter>
+        <parameter key="namespace">Nelmio\CorsBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineCacheBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/doctrine/doctrine-cache-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
+      </parameter>
+      <parameter key="ApiPlatformBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle</parameter>
+        <parameter key="namespace">ApiPlatform\Core\Bridge\Symfony\Bundle</parameter>
+      </parameter>
+      <parameter key="MakerBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineMigrationsBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
+      </parameter>
+      <parameter key="LexikJWTAuthenticationBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/lexik/jwt-authentication-bundle</parameter>
+        <parameter key="namespace">Lexik\Bundle\JWTAuthenticationBundle</parameter>
+      </parameter>
+      <parameter key="WebProfilerBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/symfony/web-profiler-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
+      </parameter>
+      <parameter key="FOSRestBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/friendsofsymfony/rest-bundle</parameter>
+        <parameter key="namespace">FOS\RestBundle</parameter>
+      </parameter>
+      <parameter key="SensioFrameworkExtraBundle" type="collection">
+        <parameter key="path">/home/mak/Filrouge/vendor/sensio/framework-extra-bundle</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
     </parameter>
@@ -101,13 +167,18 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
+<<<<<<< HEAD
     <parameter key="session.save_path">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/sessions</parameter>
+=======
+    <parameter key="session.save_path">/home/mak/Filrouge/var/cache/dev/sessions</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
+<<<<<<< HEAD
     <parameter key="validator.mapping.cache.file">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
@@ -115,6 +186,15 @@
     <parameter key="profiler.storage.dsn">file:/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.container.dump">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+=======
+    <parameter key="validator.mapping.cache.file">/home/mak/Filrouge/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.translation_domain">validators</parameter>
+    <parameter key="profiler_listener.only_exceptions">false</parameter>
+    <parameter key="profiler_listener.only_master_requests">false</parameter>
+    <parameter key="profiler.storage.dsn">file:/home/mak/Filrouge/var/cache/dev/profiler</parameter>
+    <parameter key="debug.error_handler.throw_at">-1</parameter>
+    <parameter key="debug.container.dump">/home/mak/Filrouge/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -122,13 +202,21 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
+<<<<<<< HEAD
     <parameter key="serializer.mapping.cache.file">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/serialization.php</parameter>
+=======
+    <parameter key="serializer.mapping.cache.file">/home/mak/Filrouge/var/cache/dev/serialization.php</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="twig.exception_listener.controller">twig.controller.exception::showAction</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
+<<<<<<< HEAD
     <parameter key="twig.default_path">/home/dmg/Documents/Sonatel Academy/KGtranfert/templates</parameter>
+=======
+    <parameter key="twig.default_path">/home/mak/Filrouge/templates</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="security.authentication.trust_resolver.anonymous_class">null</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">null</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -275,7 +363,11 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
+<<<<<<< HEAD
     <parameter key="doctrine.orm.proxy_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/doctrine/orm/Proxies</parameter>
+=======
+    <parameter key="doctrine.orm.proxy_dir">/home/mak/Filrouge/var/cache/dev/doctrine/orm/Proxies</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="api_platform.enable_entrypoint">true</parameter>
     <parameter key="api_platform.enable_docs">true</parameter>
@@ -347,7 +439,11 @@
     </parameter>
     <parameter key="api_platform.http_cache.public">null</parameter>
     <parameter key="api_platform.resource_class_directories" type="collection">
+<<<<<<< HEAD
       <parameter>/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Entity</parameter>
+=======
+      <parameter>/home/mak/Filrouge/src/Entity</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </parameter>
     <parameter key="api_platform.oauth.enabled">false</parameter>
     <parameter key="api_platform.oauth.clientId"></parameter>
@@ -364,7 +460,11 @@
     <parameter key="api_platform.graphql.enabled">false</parameter>
     <parameter key="api_platform.validator.serialize_payload_fields" type="collection"/>
     <parameter key="api_platform.elasticsearch.enabled">false</parameter>
+<<<<<<< HEAD
     <parameter key="doctrine_migrations.dir_name">/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Migrations</parameter>
+=======
+    <parameter key="doctrine_migrations.dir_name">/home/mak/Filrouge/src/Migrations</parameter>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -476,6 +576,16 @@
         <argument type="service" id=".service_locator.CDOTD6..App\Controller\CompteController"/>
       </call>
     </service>
+<<<<<<< HEAD
+=======
+    <service id="App\Controller\DepotController" class="App\Controller\DepotController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\DepotController"/>
+      </call>
+    </service>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="App\Controller\PartenaireController" class="App\Controller\PartenaireController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -490,6 +600,7 @@
         <argument type="service" id=".service_locator.CDOTD6..App\Controller\SecurityController"/>
       </call>
     </service>
+<<<<<<< HEAD
     <service id="App\Controller\UtilisateurController" class="App\Controller\UtilisateurController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -500,6 +611,14 @@
     <service id="App\Form\CompteType" class="App\Form\CompteType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
+=======
+    <service id="App\Form\CompteType" class="App\Form\CompteType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+    <service id="App\Form\DepotType" class="App\Form\DepotType" autowire="true" autoconfigure="true">
+      <tag name="form.type"/>
+    </service>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -601,7 +720,11 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -610,9 +733,15 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Resources</argument>
       <argument type="collection">
         <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/src</argument>
+=======
+      <argument>/home/mak/Filrouge/src/Resources</argument>
+      <argument type="collection">
+        <argument>/home/mak/Filrouge/src</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -682,7 +811,11 @@
     <service id="console.command.assets_install" class="Symfony\Bundle\FrameworkBundle\Command\AssetsInstallCommand" public="false">
       <tag name="console.command" command="assets:install"/>
       <argument type="service" id="filesystem"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -808,6 +941,10 @@
       </argument>
       <argument type="collection">
         <argument>App\Form\CompteType</argument>
+<<<<<<< HEAD
+=======
+        <argument>App\Form\DepotType</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument>App\Form\PartenaireType</argument>
         <argument>App\Form\UtilisateurType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
@@ -874,7 +1011,11 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -903,7 +1044,11 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1002,8 +1147,13 @@
         <argument key="api_platform.cache.metadata.property" type="service" id="api_platform.cache.metadata.property" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
+<<<<<<< HEAD
     <service id=".1_NativeFileSessionHandler~eIoM5Ht" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/sessions</argument>
+=======
+    <service id=".1_NativeFileSessionHandler~NjCg9ua" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>/home/mak/Filrouge/var/cache/dev/sessions</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -1026,12 +1176,20 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/sessions</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/sessions</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".1_NativeFileSessionHandler~eIoM5Ht"/>
+=======
+      <argument type="service" id=".1_NativeFileSessionHandler~NjCg9ua"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1060,7 +1218,11 @@
       <tag name="twig.extension"/>
     </service>
     <service id="form.resolved_type_factory" class="Symfony\Component\Form\Extension\DataCollector\Proxy\ResolvedTypeFactoryDataCollectorProxy" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".1_ResolvedFormTypeFactory~ihAuDyL"/>
+=======
+      <argument type="service" id=".1_ResolvedFormTypeFactory~8P25W7a"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="data_collector.form"/>
     </service>
     <service id="form.registry" class="Symfony\Component\Form\FormRegistry" public="false">
@@ -1073,7 +1235,11 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.8RCE9Vb"/>
+=======
+      <argument type="service" id=".service_locator._gqmghF"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -1187,8 +1353,13 @@
       <argument type="service" id="assets.empty_version_strategy"/>
       <argument type="service" id="assets.context"/>
     </service>
+<<<<<<< HEAD
     <service id=".1_PhpArrayAdapter~NcqY9HT" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/validation.php</argument>
+=======
+    <service id=".1_PhpArrayAdapter~3ygQVDW" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/mak/Filrouge/var/cache/dev/validation.php</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1201,7 +1372,11 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
+<<<<<<< HEAD
           <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/form/Resources/config/validation.xml</argument>
+=======
+          <argument>/home/mak/Filrouge/vendor/symfony/form/Resources/config/validation.xml</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1223,10 +1398,17 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
       <argument type="service" id=".1_PhpArrayAdapter~NcqY9HT"/>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/validation.php</argument>
+    </service>
+    <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
+      <argument type="service" id=".1_PhpArrayAdapter~3ygQVDW"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory" public="false">
       <argument type="service" id=".service_locator.LtnrEkg"/>
@@ -1301,7 +1483,11 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
+<<<<<<< HEAD
       <argument>file:/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/profiler</argument>
+=======
+      <argument>file:/home/mak/Filrouge/var/cache/dev/profiler</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1339,7 +1525,11 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
@@ -1410,7 +1600,11 @@
         <argument type="service" id="api_platform.cache.metadata.property"/>
       </call>
     </service>
+<<<<<<< HEAD
     <service id=".1_ResolvedFormTypeFactory~ihAuDyL" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
+=======
+    <service id=".1_ResolvedFormTypeFactory~8P25W7a" class="Symfony\Component\Form\ResolvedFormTypeFactory" public="false"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="form.type_extension.form.data_collector" class="Symfony\Component\Form\Extension\DataCollector\Type\DataCollectorTypeExtension" public="false">
       <tag name="form.type_extension"/>
       <argument type="service" id="data_collector.form"/>
@@ -1462,7 +1656,11 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" public="false">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="debug.file_link_formatter.url_format"/>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -2047,7 +2245,11 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="cache_dir">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev</argument>
+=======
+        <argument key="cache_dir">/home/mak/Filrouge/var/cache/dev</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -2086,7 +2288,11 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -2112,12 +2318,21 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
+<<<<<<< HEAD
     <service id=".2_PhpArrayAdapter~auQKroD" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
     <service id=".1_ArrayCache~auQKroD" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+=======
+    <service id=".2_PhpArrayAdapter~A2SjVoc" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/home/mak/Filrouge/var/cache/dev/annotations.php</argument>
+      <argument type="service" id="cache.annotations"/>
+      <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
+    </service>
+    <service id=".1_ArrayCache~A2SjVoc" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -2132,7 +2347,11 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
       <argument type="service" id=".1_ArrayCache~auQKroD"/>
+=======
+      <argument type="service" id=".1_ArrayCache~A2SjVoc"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -2142,12 +2361,20 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/annotations.php</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/annotations.php</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".2_PhpArrayAdapter~auQKroD"/>
+=======
+      <argument type="service" id=".2_PhpArrayAdapter~A2SjVoc"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="property_accessor" class="Symfony\Component\PropertyAccess\PropertyAccessor" public="false">
       <argument>false</argument>
@@ -2243,10 +2470,17 @@
           </service>
         </argument>
       </argument>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/serialization.php</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache/dev/serialization.php</argument>
+    </service>
+    <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface" public="false">
+      <argument>/home/mak/Filrouge/var/cache/dev/serialization.php</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2313,32 +2547,52 @@
     </service>
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand" public="false">
       <tag name="console.command" command="server:run"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/public</argument>
       <argument>dev</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+=======
+      <argument>/home/mak/Filrouge/public</argument>
+      <argument>dev</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <call method="setName">
         <argument>server:run</argument>
       </call>
     </service>
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand" public="false">
       <tag name="console.command" command="server:start"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/public</argument>
       <argument>dev</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+=======
+      <argument>/home/mak/Filrouge/public</argument>
+      <argument>dev</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+=======
+      <argument>/home/mak/Filrouge/var/cache</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <call method="setName">
         <argument>server:status</argument>
       </call>
@@ -2346,7 +2600,11 @@
     <service id="twig" class="Twig\Environment" public="true">
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="default_path">/home/dmg/Documents/Sonatel Academy/KGtranfert/templates</argument>
+=======
+        <argument key="default_path">/home/mak/Filrouge/templates</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="exception_controller">twig.controller.exception::showAction</argument>
@@ -2354,7 +2612,11 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
+<<<<<<< HEAD
         <argument key="cache">/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/twig</argument>
+=======
+        <argument key="cache">/home/mak/Filrouge/var/cache/dev/twig</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2451,16 +2713,28 @@
       <argument type="service" id=".service_locator.lSIKWsr.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
+<<<<<<< HEAD
         <argument key="/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+=======
+        <argument key="/home/mak/Filrouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/src</argument>
       <argument type="collection">
         <argument key="/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
       </argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/templates</argument>
+=======
+      <argument>/home/mak/Filrouge/src</argument>
+      <argument type="collection">
+        <argument key="/home/mak/Filrouge/vendor/symfony/twig-bridge/Resources/views/Form">null</argument>
+      </argument>
+      <argument>/home/mak/Filrouge/templates</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -2471,6 +2745,7 @@
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <call method="addPath">
         <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views</argument>
@@ -2525,6 +2800,62 @@
       </call>
       <call method="addPath">
         <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>!Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>!Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/security-bundle/Resources/views</argument>
+        <argument>!Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>!Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>!ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>WebProfiler</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>!WebProfiler</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/templates</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/mak/Filrouge/vendor/symfony/twig-bridge/Resources/views/Form</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -2550,7 +2881,11 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -2631,10 +2966,17 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <argument>%kernel.bundles_metadata%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/templates</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/src</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+      <argument>%kernel.bundles_metadata%</argument>
+      <argument>/home/mak/Filrouge/templates</argument>
+      <argument>/home/mak/Filrouge/src</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -3491,7 +3833,11 @@
       <argument type="collection"/>
       <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
     </service>
+<<<<<<< HEAD
     <service id=".1_ServiceLocator~peA5QF1" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+=======
+    <service id=".1_ServiceLocator~tGWC.3T" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="collection"/>
     </service>
     <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer" public="false">
@@ -3651,7 +3997,11 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
+<<<<<<< HEAD
         <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/doctrine/orm/Proxies</argument>
+=======
+        <argument>/home/mak/Filrouge/var/cache/dev/doctrine/orm/Proxies</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -3681,7 +4031,11 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
+<<<<<<< HEAD
         <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Entity</argument>
+=======
+        <argument>/home/mak/Filrouge/src/Entity</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -3692,17 +4046,29 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_7c6ebaffa0cb7fd995767182fc182631a2a91af48661e7956b3dc46a19299b20</argument>
+=======
+        <argument>sf_orm_default_7a21385af2ec832305dfcd0609e15cfda0a40d23184067eadeb1d1bb850d6c26</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_7c6ebaffa0cb7fd995767182fc182631a2a91af48661e7956b3dc46a19299b20</argument>
+=======
+        <argument>sf_orm_default_7a21385af2ec832305dfcd0609e15cfda0a40d23184067eadeb1d1bb850d6c26</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
+<<<<<<< HEAD
         <argument>sf_orm_default_7c6ebaffa0cb7fd995767182fc182631a2a91af48661e7956b3dc46a19299b20</argument>
+=======
+        <argument>sf_orm_default_7a21385af2ec832305dfcd0609e15cfda0a40d23184067eadeb1d1bb850d6c26</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver">
@@ -4392,8 +4758,13 @@
     <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/templates</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+      <argument>/home/mak/Filrouge/templates</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder" public="false">
       <argument>App</argument>
@@ -4451,7 +4822,11 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="maker.generator"/>
     </service>
     <service id="maker.maker.make_fixtures" class="Symfony\Bundle\MakerBundle\Maker\MakeFixtures" public="false">
@@ -4501,7 +4876,11 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration" public="false">
       <tag name="maker.command"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="doctrine_migrations.diff_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsDiffDoctrineCommand">
       <tag name="console.command"/>
@@ -4650,7 +5029,11 @@
     <service id="lexik_jwt_authentication.security.jwt_user_provider" class="Lexik\Bundle\JWTAuthenticationBundle\Security\User\JWTUserProvider" public="false">
       <argument></argument>
     </service>
+<<<<<<< HEAD
     <service id=".2_HtmlDumper~1hMBYNQ" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+=======
+    <service id=".2_HtmlDumper~lxVBglf" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument>null</argument>
       <argument>UTF-8</argument>
       <argument>1</argument>
@@ -4661,14 +5044,22 @@
         </argument>
       </call>
     </service>
+<<<<<<< HEAD
     <service id=".1_NonceGenerator~1hMBYNQ" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+=======
+    <service id=".1_NonceGenerator~lxVBglf" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="profiler" on-invalid="null"/>
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
+<<<<<<< HEAD
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
+=======
+      <argument>/home/mak/Filrouge</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -4682,11 +5073,19 @@
       <argument type="service" id="debug.file_link_formatter"/>
     </service>
     <service id="web_profiler.csp.handler" class="Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".1_NonceGenerator~1hMBYNQ"/>
     </service>
     <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id=".2_HtmlDumper~1hMBYNQ"/>
+=======
+      <argument type="service" id=".1_NonceGenerator~lxVBglf"/>
+    </service>
+    <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
+      <tag name="twig.extension"/>
+      <argument type="service" id=".2_HtmlDumper~lxVBglf"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="debug.file_link_formatter.url_format" class="string" public="false">
       <argument type="service" id="router.default"/>
@@ -4902,17 +5301,30 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CompteController" class="App\Controller\CompteController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CompteController" class="App\Controller\CompteController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CompteController" class="App\Controller\CompteController" autowire="true" autoconfigure="true" abstract="true"/>
+<<<<<<< HEAD
+=======
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\DepotController" class="App\Controller\DepotController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\DepotController" class="App\Controller\DepotController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\DepotController" class="App\Controller\DepotController" autowire="true" autoconfigure="true" abstract="true"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
+<<<<<<< HEAD
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UtilisateurController" class="App\Controller\UtilisateurController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UtilisateurController" class="App\Controller\UtilisateurController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\UtilisateurController" class="App\Controller\UtilisateurController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\CompteType" class="App\Form\CompteType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\CompteType" class="App\Form\CompteType" autowire="true" autoconfigure="true" abstract="true"/>
+=======
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\CompteType" class="App\Form\CompteType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\CompteType" class="App\Form\CompteType" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\DepotType" class="App\Form\DepotType" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Form\DepotType" class="App\Form\DepotType" autowire="true" autoconfigure="true" abstract="true"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\PartenaireType" class="App\Form\PartenaireType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\UtilisateurType" class="App\Form\UtilisateurType" autowire="true" abstract="true"/>
@@ -5118,6 +5530,21 @@
         <argument key="compte" type="service" id=".errored..service_locator.M30T2zO.App\Entity\Compte"/>
       </argument>
     </service>
+<<<<<<< HEAD
+=======
+    <service id=".service_locator.VzTiFkg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="depotRepository" type="service" id="App\Repository\DepotRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.E3DK7HO" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="depot" type="service" id=".errored..service_locator.E3DK7HO.App\Entity\Depot"/>
+      </argument>
+    </service>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id=".service_locator.0VWx6lC" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5137,6 +5564,7 @@
         <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
       </argument>
     </service>
+<<<<<<< HEAD
     <service id=".service_locator.Dqh887e" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5160,27 +5588,51 @@
     <service id=".service_locator.3eS32UX" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+=======
+    <service id=".service_locator.v0o8Bjj" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="App\Controller\CompteController::delete" type="service" id=".service_locator.M30T2zO"/>
         <argument key="App\Controller\CompteController::edit" type="service" id=".service_locator.M30T2zO"/>
         <argument key="App\Controller\CompteController::index" type="service" id=".service_locator.JfrEn5y"/>
         <argument key="App\Controller\CompteController::new" type="service" id=".service_locator.k22NER8"/>
         <argument key="App\Controller\CompteController::show" type="service" id=".service_locator.M30T2zO"/>
+<<<<<<< HEAD
+=======
+        <argument key="App\Controller\DepotController::delete" type="service" id=".service_locator.E3DK7HO"/>
+        <argument key="App\Controller\DepotController::edit" type="service" id=".service_locator.E3DK7HO"/>
+        <argument key="App\Controller\DepotController::index" type="service" id=".service_locator.VzTiFkg"/>
+        <argument key="App\Controller\DepotController::new" type="service" id=".service_locator.k22NER8"/>
+        <argument key="App\Controller\DepotController::show" type="service" id=".service_locator.E3DK7HO"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="App\Controller\PartenaireController::delete" type="service" id=".service_locator.xrohzKf"/>
         <argument key="App\Controller\PartenaireController::edit" type="service" id=".service_locator.xrohzKf"/>
         <argument key="App\Controller\PartenaireController::index" type="service" id=".service_locator.0VWx6lC"/>
         <argument key="App\Controller\PartenaireController::new" type="service" id=".service_locator.k22NER8"/>
         <argument key="App\Controller\PartenaireController::show" type="service" id=".service_locator.xrohzKf"/>
         <argument key="App\Controller\SecurityController::register" type="service" id=".service_locator.JBoVXlr"/>
+<<<<<<< HEAD
         <argument key="App\Controller\UtilisateurController::delete" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController::edit" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController::index" type="service" id=".service_locator.Dqh887e"/>
         <argument key="App\Controller\UtilisateurController::new" type="service" id=".service_locator.jqEEfZg"/>
         <argument key="App\Controller\UtilisateurController::show" type="service" id=".service_locator.kfbCA7i"/>
+=======
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="App\Controller\CompteController:delete" type="service" id=".service_locator.M30T2zO"/>
         <argument key="App\Controller\CompteController:edit" type="service" id=".service_locator.M30T2zO"/>
         <argument key="App\Controller\CompteController:index" type="service" id=".service_locator.JfrEn5y"/>
         <argument key="App\Controller\CompteController:new" type="service" id=".service_locator.k22NER8"/>
         <argument key="App\Controller\CompteController:show" type="service" id=".service_locator.M30T2zO"/>
+<<<<<<< HEAD
+=======
+        <argument key="App\Controller\DepotController:delete" type="service" id=".service_locator.E3DK7HO"/>
+        <argument key="App\Controller\DepotController:edit" type="service" id=".service_locator.E3DK7HO"/>
+        <argument key="App\Controller\DepotController:index" type="service" id=".service_locator.VzTiFkg"/>
+        <argument key="App\Controller\DepotController:new" type="service" id=".service_locator.k22NER8"/>
+        <argument key="App\Controller\DepotController:show" type="service" id=".service_locator.E3DK7HO"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="App\Controller\PartenaireController:delete" type="service" id=".service_locator.xrohzKf"/>
         <argument key="App\Controller\PartenaireController:edit" type="service" id=".service_locator.xrohzKf"/>
         <argument key="App\Controller\PartenaireController:index" type="service" id=".service_locator.0VWx6lC"/>
@@ -5253,10 +5705,18 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
+<<<<<<< HEAD
     <service id=".service_locator.8RCE9Vb" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\CompteType" type="service" id="App\Form\CompteType"/>
+=======
+    <service id=".service_locator._gqmghF" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Form\CompteType" type="service" id="App\Form\CompteType"/>
+        <argument key="App\Form\DepotType" type="service" id="App\Form\DepotType"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
         <argument key="App\Form\PartenaireType" type="service" id="App\Form\PartenaireType"/>
         <argument key="App\Form\UtilisateurType" type="service" id="App\Form\UtilisateurType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service" id="form.type.entity"/>
@@ -5347,6 +5807,15 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.CDOTD6." method="withContext"/>
     </service>
+<<<<<<< HEAD
+=======
+    <service id=".service_locator.CDOTD6..App\Controller\DepotController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\DepotController"/>
+      <argument>App\Controller\DepotController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id=".service_locator.CDOTD6..App\Controller\PartenaireController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\PartenaireController"/>
       <argument>App\Controller\PartenaireController</argument>
@@ -5472,12 +5941,20 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.3eS32UX"/>
+=======
+      <argument type="service" id=".service_locator.v0o8Bjj"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
+<<<<<<< HEAD
       <argument type="service" id=".service_locator.3eS32UX"/>
+=======
+      <argument type="service" id=".service_locator.v0o8Bjj"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -5515,8 +5992,13 @@
       <argument type="service" id="api_platform.path_segment_name_generator.underscore"/>
     </service>
     <service id=".errored..service_locator.M30T2zO.App\Entity\Compte" class="App\Entity\Compte"/>
+<<<<<<< HEAD
     <service id=".errored..service_locator.xrohzKf.App\Entity\Partenaire" class="App\Entity\Partenaire"/>
     <service id=".errored..service_locator.kfbCA7i.App\Entity\Utilisateur" class="App\Entity\Utilisateur"/>
+=======
+    <service id=".errored..service_locator.E3DK7HO.App\Entity\Depot" class="App\Entity\Depot"/>
+    <service id=".errored..service_locator.xrohzKf.App\Entity\Partenaire" class="App\Entity\Partenaire"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <argument type="service" id=".service_locator.A1Bx0QA"/>
       <argument type="collection">
@@ -5656,108 +6138,197 @@
       </argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
+<<<<<<< HEAD
       <argument>IRAFAGI+l7</argument>
       <argument>0</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>QULrAbsItZ</argument>
+      <argument>0</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>9DELPR7Qum</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>P+qjMx5mD9</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>6twL37+QqG</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>-4ZSkf-7o6</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>Z94TQX+YCz</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>9CRDcCM5ph</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>uG+P1kyMLs</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>P7ZUEPNDQ8</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>lfxVuNGL-F</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>6S2vPGQLjb</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
+<<<<<<< HEAD
       <argument>EzUb7ha9Ix</argument>
       <argument>0</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>-CbIRaQgHm</argument>
+      <argument>0</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.security_expression_language.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>uEgRwUTKEP</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>RJ-1VMUN57</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.route_name_resolver.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>CHRGBnpD4-</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>HKAsTW3sId</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.identifiers_extractor.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>k5d-iEBcsK</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>3xDfZPeoHg</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.subresource_operation_factory.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>y1nEAesIxl</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>POebkRGvUi</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.metadata.resource.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>8Dvnc9VTcL</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>qjbewBjApi</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="api_platform.cache.metadata.property.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+<<<<<<< HEAD
       <argument>ZfAxiFuSQo</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache/dev/pools</argument>
+=======
+      <argument>bmAbsZJnHH</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/home/mak/Filrouge/var/cache/dev/pools</argument>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5935,7 +6506,11 @@
     <service id="fos_rest.inflector" alias="fos_rest.inflector.doctrine"/>
     <service id="sensio_framework_extra.converter.doctrine.orm.expression_language" alias="sensio_framework_extra.converter.doctrine.orm.expression_language.default" public="false"/>
     <service id="sensio_framework_extra.security.expression_language" alias="sensio_framework_extra.security.expression_language.default" public="false"/>
+<<<<<<< HEAD
     <service id="argument_resolver.controller_locator" alias=".service_locator.3eS32UX"/>
+=======
+    <service id="argument_resolver.controller_locator" alias=".service_locator.v0o8Bjj"/>
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>

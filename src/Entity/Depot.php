@@ -29,13 +29,13 @@ class Depot
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\partenaire")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Partenaire")
      * @ORM\JoinColumn(nullable=false)
      */
     private $partenaire;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\compte")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Compte")
      * @ORM\JoinColumn(nullable=false)
      */
     private $compte;

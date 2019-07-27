@@ -16,10 +16,22 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception::showAction'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception::cssAction'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'compte_index' => [[], ['_controller' => 'App\\Controller\\CompteController::index'], [], [['text', '/compte/']], [], []],
+<<<<<<< HEAD
     'compte_new' => [[], ['_controller' => 'App\\Controller\\CompteController::new'], [], [['text', '/compte/new']], [], []],
     'compte_show' => [['id'], ['_controller' => 'App\\Controller\\CompteController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
     'compte_edit' => [['id'], ['_controller' => 'App\\Controller\\CompteController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
     'compte_delete' => [['id'], ['_controller' => 'App\\Controller\\CompteController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
+=======
+    'comptenew' => [[], ['_controller' => 'App\\Controller\\CompteController::new'], [], [['text', '/compte/new']], [], []],
+    'compte_show' => [['id'], ['_controller' => 'App\\Controller\\CompteController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
+    'compte_edit' => [['id'], ['_controller' => 'App\\Controller\\CompteController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
+    'compte_delete' => [['id'], ['_controller' => 'App\\Controller\\CompteController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/compte']], [], []],
+    'depot_index' => [[], ['_controller' => 'App\\Controller\\DepotController::index'], [], [['text', '/depot/']], [], []],
+    'depot_new' => [[], ['_controller' => 'App\\Controller\\DepotController::new'], [], [['text', '/depot/new']], [], []],
+    'depot_show' => [['id'], ['_controller' => 'App\\Controller\\DepotController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/depot']], [], []],
+    'depot_edit' => [['id'], ['_controller' => 'App\\Controller\\DepotController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/depot']], [], []],
+    'depot_delete' => [['id'], ['_controller' => 'App\\Controller\\DepotController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/depot']], [], []],
+>>>>>>> 09007aff128ba0823467170755675b3a62bc91b7
     'partenaire_index' => [[], ['_controller' => 'App\\Controller\\PartenaireController::index'], [], [['text', '/partenaire/']], [], []],
     'partenaire_new' => [[], ['_controller' => 'App\\Controller\\PartenaireController::new'], [], [['text', '/partenaire/new']], [], []],
     'partenaire_show' => [['id'], ['_controller' => 'App\\Controller\\PartenaireController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/partenaire']], [], []],
