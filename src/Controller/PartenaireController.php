@@ -43,19 +43,8 @@ class PartenaireController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($partenaire);
             $entityManager->flush();
-<<<<<<< HEAD
-
-            
-        }
-
-        return $this->render('partenaire/new.html.twig', [
-            
-            'form' => $form->createView(),
-        ]);
-=======
         
         return new Response('Le partenaire a été ajouté',Response::HTTP_CREATED);
->>>>>>> c9b51a35ebb6e7eee6432a2dfe48a2f78c3b5e6a
     }
 
     /**

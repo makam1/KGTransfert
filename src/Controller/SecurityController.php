@@ -10,7 +10,6 @@ use Doctrine\ORM\EntityManagerInterface;
 use App\Entity\Utilisateur;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Entity\Partenaire;
-use App\Entity\User;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
@@ -40,7 +39,7 @@ class SecurityController extends AbstractController
         $login->setEmail($values->email);
         $login->setTelephone($values->telephone);
         $login->setStatut($values->statut);
-        $login->setRoles($login->getRoles());
+        $login->setRoles(["ROLE_SUPERADMIN"]);
         $login->setPassword($passwordEncoder->encodePassword($login,$values->password));
         $entityManager->persist($login);
         $entityManager->flush();
@@ -62,7 +61,7 @@ class SecurityController extends AbstractController
 
      
 
-/**
+   /**
      * @Route("/login_check", name="login", methods={"POST"})
      * @return JsonResponse
      */
@@ -75,6 +74,7 @@ class SecurityController extends AbstractController
             'login' => $login->getUsername(),
             'roles' => $login->getRoles()
         ]);
+        
 
     }
     

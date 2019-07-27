@@ -56,7 +56,7 @@ class Utilisateur implements UserInterface
     private $statut;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\partenaire", inversedBy="no")
+     * @ORM\ManyToOne(targetEntity="Partenaire", inversedBy="no")
      * @ORM\JoinColumn(nullable=false)
      */
     private $partenaire;
@@ -95,7 +95,7 @@ class Utilisateur implements UserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        $roles[] = 'ROLE_ADMIN';
 
         return array_unique($roles);
     }
