@@ -79,6 +79,6 @@ class __TwigTemplate_3bfce7ca00777c284bc694c738c7092d5cbc32344ec6a7d631471e32be4
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/home/mak/filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

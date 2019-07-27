@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\QueryBuilder;
 
 /**
  * @Route("/depot")
@@ -34,18 +35,15 @@ class DepotController extends AbstractController
     public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {
         $depot = new Depot();
-        //$compte = new Compte();
         $form = $this->createForm(DepotType::class,$depot);
         $data=json_decode($request->getContent(), true);
-
+        
         $form->submit($data);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($depot);
             $entityManager->flush();
-
-            
-        
+                  
         return new Response('Le dépôt a été effectué',Response::HTTP_CREATED);
     }
 

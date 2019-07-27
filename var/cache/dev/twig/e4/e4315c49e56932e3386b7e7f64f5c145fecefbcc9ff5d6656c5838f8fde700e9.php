@@ -75,6 +75,6 @@ class __TwigTemplate_e578584bc958ab69c38904fdc64bc5a0ed527d44880c50fa1ebbd0e7b18
         return new Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.js.twig", "/home/mak/filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
+", "@Twig/Exception/exception.js.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
     }
 }
