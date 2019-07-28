@@ -909,6 +909,6 @@ class __TwigTemplate_26d1330d2e69cf548032f13f8765be0c7b4dd21f17c4548f99123d1cf0a
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

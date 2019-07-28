@@ -154,6 +154,6 @@ class __TwigTemplate_1eb9062c3531272aacf7360448bee82ffba2d55dab31c0a7e18092e7bce
     </ul>
 </div>
 {% endblock %}
-", "security/index.html.twig", "/home/mak/Filrouge/templates/security/index.html.twig");
+", "security/index.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/templates/security/index.html.twig");
     }
 }

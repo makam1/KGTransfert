@@ -63,6 +63,6 @@ class __TwigTemplate_f5f7b0b6bfb1e9bef2ae802e13631fc5431521524bad86a93029e5afdad
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
-", "@Framework/Form/choice_options.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
+", "@Framework/Form/choice_options.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
     }
 }

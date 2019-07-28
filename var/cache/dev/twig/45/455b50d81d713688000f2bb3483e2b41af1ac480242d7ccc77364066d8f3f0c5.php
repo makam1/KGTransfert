@@ -63,6 +63,6 @@ class __TwigTemplate_2e64109381bea683b3fe428f35f0a13cb55bb911b467bedfab3de7390b2
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->widget(\$form) ?>
-", "@Framework/Form/hidden_row.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/hidden_row.html.php");
+", "@Framework/Form/hidden_row.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/hidden_row.html.php");
     }
 }

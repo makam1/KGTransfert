@@ -75,6 +75,6 @@ class __TwigTemplate_a7e2aade402fbcb3f99e31d161fdb2512fa3249aa1cedb33a55857d3001
         return new Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.css.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
+", "@Twig/Exception/exception.css.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
     }
 }

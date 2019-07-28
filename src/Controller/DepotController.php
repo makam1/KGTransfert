@@ -15,7 +15,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\QueryBuilder;
 
 /**
- * @Route("/depot")
+ * @Route("/api/depot")
  */
 class DepotController extends AbstractController
 {

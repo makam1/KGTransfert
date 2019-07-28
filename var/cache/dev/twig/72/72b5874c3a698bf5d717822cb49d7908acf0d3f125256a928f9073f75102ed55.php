@@ -79,6 +79,6 @@ class __TwigTemplate_4a0243a000153d2f0337b94a2e4397ab9fa71be8c597a3d2a7b1d68b0c2
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.js.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
+", "@Twig/Exception/error.js.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/Exception/error.js.twig");
     }
 }

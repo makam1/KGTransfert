@@ -6,15 +6,17 @@ use App\Entity\Compte;
 use App\Form\CompteType;
 use App\Repository\CompteRepository;
 use App\Repository\PartenaireRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
-use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
- * @Route("/compte")
+ * @Route("/api/compte")
+ * @IsGranted("ROLE_ADMIN")
  */
 class CompteController extends AbstractController
 {
@@ -30,6 +32,7 @@ class CompteController extends AbstractController
 
     /**
      * @Route("/new", name="comptenew", methods={"GET","POST"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {

@@ -83,6 +83,6 @@ class __TwigTemplate_788d6f85971f6149bdb3a74bbc675e19cb0b73a21ec005e40ed7d1a48d5
     <?php echo \$view['form']->block(\$form, 'form_rows'); ?>
     <?php echo \$view['form']->rest(\$form); ?>
 </table>
-", "@Framework/FormTable/form_widget_compound.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/FormTable/form_widget_compound.html.php");
+", "@Framework/FormTable/form_widget_compound.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/FormTable/form_widget_compound.html.php");
     }
 }

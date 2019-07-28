@@ -823,6 +823,6 @@ $context["answer"] === false)) {
         </div>
     {% endif %}
 {% endblock %}
-", "@ApiPlatform/DataCollector/request.html.twig", "/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/DataCollector/request.html.twig");
+", "@ApiPlatform/DataCollector/request.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/DataCollector/request.html.twig");
     }
 }

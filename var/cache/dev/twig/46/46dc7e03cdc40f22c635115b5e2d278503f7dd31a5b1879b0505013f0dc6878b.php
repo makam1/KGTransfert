@@ -65,6 +65,6 @@ class __TwigTemplate_df10eecb57ba6da42bca05922c221b4969e73b210270806bfa216ce79ac
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'text']).\$view->escape(\$symbol) ?>
-", "@Framework/Form/percent_widget.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+", "@Framework/Form/percent_widget.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

@@ -375,6 +375,6 @@ class __TwigTemplate_5c43385d71b90655e3dd695b3dd5176e1066d48de6dd39a8cd90583d0b7
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/SwaggerUi/index.html.twig");
     }
 }

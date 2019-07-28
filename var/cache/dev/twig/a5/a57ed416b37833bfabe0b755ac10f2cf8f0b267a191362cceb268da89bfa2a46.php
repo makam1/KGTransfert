@@ -171,6 +171,6 @@ class __TwigTemplate_b8b16f0f4f820430ec724bb83ec74af324ae25f8969895d650d9c3bd728
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/mak/Filrouge/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

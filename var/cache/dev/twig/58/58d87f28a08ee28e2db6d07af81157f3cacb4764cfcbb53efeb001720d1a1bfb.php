@@ -63,6 +63,6 @@ class __TwigTemplate_c3695ae979b4d97f0b9e8dd9094d68e8ea3c7616048fc6a79ec6d9fc99c
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'button_widget', ['type' => isset(\$type) ? \$type : 'submit']) ?>
-", "@Framework/Form/submit_widget.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
+", "@Framework/Form/submit_widget.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
     }
 }

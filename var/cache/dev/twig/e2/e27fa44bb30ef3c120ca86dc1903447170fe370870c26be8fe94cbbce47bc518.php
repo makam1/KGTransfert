@@ -479,6 +479,6 @@ class __TwigTemplate_7a91fc1cda43527ee00c476821517e75b3983a158527bdcb6f92874c29f
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

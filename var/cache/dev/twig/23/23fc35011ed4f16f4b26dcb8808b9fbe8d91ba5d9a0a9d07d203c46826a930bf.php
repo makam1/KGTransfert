@@ -227,6 +227,6 @@ class __TwigTemplate_3906589ed73e2b7d9781a8ba8b5cb2543a2b3f2d6cbebb584b55b7256e6
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

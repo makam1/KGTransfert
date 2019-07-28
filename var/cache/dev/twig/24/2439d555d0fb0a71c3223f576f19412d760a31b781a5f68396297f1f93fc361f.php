@@ -130,6 +130,6 @@ class __TwigTemplate_2fdbe910275ad05211d84fc9db267109885164fe2fcf422d52f2e4c6098
 
 </body>
 </html>
-", "@ApiPlatform/Graphiql/index.html.twig", "/home/mak/Filrouge/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
+", "@ApiPlatform/Graphiql/index.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views/Graphiql/index.html.twig");
     }
 }

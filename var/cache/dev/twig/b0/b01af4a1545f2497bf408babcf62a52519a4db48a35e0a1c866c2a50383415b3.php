@@ -885,6 +885,6 @@ class SvgRenderer {
         return element;
     }
 }
-", "@WebProfiler/Collector/time.js", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
+", "@WebProfiler/Collector/time.js", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
     }
 }

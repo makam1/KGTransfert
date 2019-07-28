@@ -102,6 +102,6 @@ class __TwigTemplate_e5d14034d6d4bc264409b2e514d8a87289b89349038037ed88b4ea91f7c
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
     }
 }

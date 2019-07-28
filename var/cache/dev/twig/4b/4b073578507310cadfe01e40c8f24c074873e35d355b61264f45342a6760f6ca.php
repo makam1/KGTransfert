@@ -67,6 +67,6 @@ class __TwigTemplate_b841db96e67d4dc86280b98493ea8f0a15661fc703a54c715bea560e14d
         return new Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
-", "@Framework/Form/button_row.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
+", "@Framework/Form/button_row.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
     }
 }

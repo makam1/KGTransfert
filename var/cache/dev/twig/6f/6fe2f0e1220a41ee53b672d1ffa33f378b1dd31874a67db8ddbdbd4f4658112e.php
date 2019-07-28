@@ -1828,6 +1828,6 @@ class __TwigTemplate_264b49360e8b434667c1b34ed3e1ea1522497f4887f578e02eb01a85f4e
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/mak/Filrouge/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

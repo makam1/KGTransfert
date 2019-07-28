@@ -79,6 +79,6 @@ class __TwigTemplate_f937997bcd5686fd63169c7ff7520d9fb39baa2bbcb5f93d1337c0f0ec7
         return new Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

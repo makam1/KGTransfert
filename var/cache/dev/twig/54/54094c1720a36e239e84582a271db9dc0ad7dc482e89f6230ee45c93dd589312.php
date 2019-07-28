@@ -125,6 +125,6 @@ class __TwigTemplate_03a81399414a90cd0438b4a01bdd248c525d9e1912b2fe46f07b6e0fa3f
         </div>
     </body>
 </html>
-", "@Twig/Exception/error.html.twig", "/home/mak/Filrouge/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
+", "@Twig/Exception/error.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
     }
 }

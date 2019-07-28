@@ -102,6 +102,6 @@ class __TwigTemplate_b52aacf5cde3538df9845bf15ea97b131f3433af754d22d56acacca6bba
     {% if link|default(false) %}</a>{% endif %}
         <div class=\"sf-toolbar-info\">{{ text|default('') }}</div>
 </div>
-", "@WebProfiler/Profiler/toolbar_item.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
+", "@WebProfiler/Profiler/toolbar_item.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
     }
 }

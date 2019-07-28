@@ -81,6 +81,6 @@ class __TwigTemplate_294f4f147273047b034a6a77871f93fa516a88920ba86fb88d4d7f737c3
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

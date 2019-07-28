@@ -4,17 +4,19 @@ namespace App\Controller;
 
 use App\Entity\Utilisateur;
 use App\Form\UtilisateurType;
+use Doctrine\ORM\EntityManagerInterface;
 use App\Repository\UtilisateurRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
-use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+
 /**
- * @Route("/api")
+ * @Route("/api/user")
  */
 class UtilisateurController extends AbstractController
 {
@@ -29,7 +31,7 @@ class UtilisateurController extends AbstractController
     }
 
     /**
-     * @Route("/newadminpart", name="admin_utilisateur_new", methods={"GET","POST"})
+     * @Route("/newadmin", name="admin_utilisateur_new", methods={"GET","POST"})
      */
     public function new(Request $request,SerializerInterface $serializerInterface,EntityManagerInterface $entityManager,UserPasswordEncoderInterface $encoder): Response
     {
@@ -39,8 +41,35 @@ class UtilisateurController extends AbstractController
         $form->handleRequest($request);
         $form->submit($data); 
         $utilisateur->setRoles(["ROLE_ADMIN"]);
+        $hash= $encoder->encodePassword($utilisateur,$utilisateur->getPassword());
+        $utilisateur->setPassword($hash);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($utilisateur);
+        $entityManager->flush();
+        return new Response('Utilisateur ajouter',Response::HTTP_CREATED);
+
+       
+    }
+
+
+
+     /**
+     * Require ROLE_ADMIN for only this controller method
+     * @Route("/newuser", name="utilisateur_new", methods={"POST"})
+     * @IsGranted("ROLE_ADMIN")
+     */
+    public function newuser(Request $request,SerializerInterface $serializerInterface,EntityManagerInterface $entityManager,UserPasswordEncoderInterface $encoder): Response
+    {
+       
+        $utilisateur = new Utilisateur();
+        $form = $this->createForm(UtilisateurType::class, $utilisateur);
+        $data=json_decode($request->getContent(),true);
+        $form->handleRequest($request);
+        $form->submit($data); 
+        $utilisateur->setRoles(["ROLE_USER"]);
            $hash= $encoder->encodePassword($utilisateur,$utilisateur->getPassword());
            $utilisateur->setPassword($hash);
+          /*  $this->denyAccessUnlessGranted('ROLE_ADMIN'); */
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($utilisateur);
             $entityManager->flush();

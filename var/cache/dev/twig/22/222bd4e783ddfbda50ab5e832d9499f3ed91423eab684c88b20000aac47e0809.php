@@ -73,6 +73,6 @@ class __TwigTemplate_efcca11e32b3cd5770b3584eb8830616dec08a5ce9b96c814b79bbac01e
     <?php echo \$view['form']->label(\$child, null, ['translation_domain' => \$choice_translation_domain]) ?>
 <?php endforeach ?>
 </div>
-", "@Framework/Form/choice_widget_expanded.html.php", "/home/mak/Filrouge/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
+", "@Framework/Form/choice_widget_expanded.html.php", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
     }
 }

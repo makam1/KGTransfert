@@ -33,7 +33,14 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
-        - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/api,       roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/register ,            roles: ROLE_SUPERADMIN }   
+        - { path: ^/api/partenaire,           roles: ROLE_SUPERADMIN }
+        - { path: ^/api/compte,               roles: ROLE_SUPERADMIN }
+        - { path: ^/api/depot,                roles: ROLE_SUPERADMIN }
+        - { path: ^/api/user,                 roles: ROLE_SUPERADMIN }
+        - { path: ^/api/user,                 roles: ROLE_ADMIN }
+        - { path: ^/api/user/newuser,         roles: ROLE_ADMIN }
+        - { path: ^/api/user/newuser,         roles: ROLE_ADMIN }
+        #- { path: ^/api,                      roles: ROLE_USER }
+        #- { path: ^/api/login,               roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        #- { path: ^/api,                     roles: IS_AUTHENTICATED_FULLY }

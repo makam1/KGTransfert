@@ -1692,6 +1692,6 @@ class __TwigTemplate_a947a5a83dc3bbcdc2932f02d05a7989450148c1e8cc911b3f3fc0b560d
     });
 
 /*]]>*/</script>
-", "@WebProfiler/Profiler/base_js.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base_js.html.twig");
+", "@WebProfiler/Profiler/base_js.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base_js.html.twig");
     }
 }

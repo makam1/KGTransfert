@@ -135,6 +135,6 @@ class __TwigTemplate_9136c43821136b1643ef655864fc1f6627f12c5e26580dad242e8654053
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
     }
 }

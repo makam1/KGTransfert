@@ -318,6 +318,6 @@ class __TwigTemplate_cded8ba26c16b1f4e3860301c0bd3b3576a64164f1f3b48dcf75299c2e1
 .timeline-graph .{{ classnames['controller.argument_value_resolver']|raw }} .timeline-period {
     fill: var(--color-controller-argument-value-resolver);
 }
-", "@WebProfiler/Collector/time.css.twig", "/home/mak/Filrouge/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
     }
 }
