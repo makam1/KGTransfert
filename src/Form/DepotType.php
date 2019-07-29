@@ -18,15 +18,7 @@ class DepotType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('montant')
-            ->add('date', DateType::class, [
-                'widget' => 'single_text',
-                'format' => 'yyyy-MM-dd',
-            ])
-            ->add('partenaire',EntityType::class,[
-                'class'=> Partenaire::class,
-                'choice_label'=> 'partenaire_id'
-            ])
+            ->add('montant')  
             ->add('compte',EntityType::class,[
                 'class'=> Compte::class,
                 'choice_label'=> 'compte_id'

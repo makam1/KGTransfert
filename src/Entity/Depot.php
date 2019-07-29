@@ -29,12 +29,6 @@ class Depot
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Partenaire")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $partenaire;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Compte")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -65,18 +59,6 @@ class Depot
     public function setDate(\DateTimeInterface $date): self
     {
         $this->date = $date;
-
-        return $this;
-    }
-
-    public function getPartenaire(): ?partenaire
-    {
-        return $this->partenaire;
-    }
-
-    public function setPartenaire(?partenaire $partenaire): self
-    {
-        $this->partenaire = $partenaire;
 
         return $this;
     }
