@@ -28,6 +28,7 @@
     "require-dev": {
         "symfony/browser-kit": "4.3.*",
         "symfony/css-selector": "4.3.*",
+        "symfony/phpunit-bridge": "^4.3",
         "symfony/profiler-pack": "^1.0",
         "symfony/test-pack": "^1.0",
         "symfony/web-server-bundle": "4.3.*"

@@ -16,7 +16,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 
 /**
- * @Route("/partenaire")
+ * @Route("/api/partenaire")
  */
 class PartenaireController extends AbstractController
 {
