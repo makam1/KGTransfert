@@ -2334,7 +2334,7 @@
       <tag name="console.command" command="server:run"/>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/public</argument>
       <argument>dev</argument>
-      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <call method="setName">
         <argument>server:run</argument>
       </call>
@@ -2343,21 +2343,21 @@
       <tag name="console.command" command="server:start"/>
       <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/public</argument>
       <argument>dev</argument>
-      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
-      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
-      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert/var/cache</argument>
+      <argument>/home/dmg/Documents/Sonatel Academy/KGtranfert</argument>
       <call method="setName">
         <argument>server:status</argument>
       </call>
@@ -2855,7 +2855,7 @@
         <argument>null</argument>
       </call>
       <call method="add">
-        <argument type="service" id=".security.request_matcher._Fev21N"/>
+        <argument type="service" id=".security.request_matcher.7v5lVwJ"/>
         <argument type="collection">
           <argument>ROLE_SUPERADMIN</argument>
         </argument>
@@ -2864,21 +2864,14 @@
       <call method="add">
         <argument type="service" id=".security.request_matcher._Fev21N"/>
         <argument type="collection">
-          <argument>ROLE_ADMIN</argument>
+          <argument>ROLE_ADMINP</argument>
         </argument>
         <argument>null</argument>
       </call>
       <call method="add">
         <argument type="service" id=".security.request_matcher.6Jc6jjt"/>
         <argument type="collection">
-          <argument>ROLE_ADMIN</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.6Jc6jjt"/>
-        <argument type="collection">
-          <argument>ROLE_ADMIN</argument>
+          <argument>ROLE_ADMINP</argument>
         </argument>
         <argument>null</argument>
       </call>
@@ -3389,6 +3382,9 @@
     </service>
     <service id=".security.request_matcher.ipYKN07" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
       <argument>^/api/depot</argument>
+    </service>
+    <service id=".security.request_matcher.7v5lVwJ" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/api/user/newadmin</argument>
     </service>
     <service id=".security.request_matcher._Fev21N" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
       <argument>^/api/user</argument>
@@ -5233,12 +5229,11 @@
         <argument key="utilisateurRepository" type="service" id="App\Repository\UtilisateurRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.jqEEfZg" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.Hm8CUXV" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="encoder" type="service" id="security.user_password_encoder.generic"/>
         <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
-        <argument key="serializerInterface" type="service" id="serializer"/>
       </argument>
     </service>
     <service id=".service_locator.kfbCA7i" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5247,7 +5242,7 @@
         <argument key="utilisateur" type="service" id=".errored..service_locator.kfbCA7i.App\Entity\Utilisateur"/>
       </argument>
     </service>
-    <service id=".service_locator.kqRNA8V" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.HzIQWzW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\CompteController::delete" type="service" id=".service_locator.M30T2zO"/>
@@ -5269,8 +5264,8 @@
         <argument key="App\Controller\UtilisateurController::delete" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController::edit" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController::index" type="service" id=".service_locator.Dqh887e"/>
-        <argument key="App\Controller\UtilisateurController::new" type="service" id=".service_locator.jqEEfZg"/>
-        <argument key="App\Controller\UtilisateurController::newuser" type="service" id=".service_locator.jqEEfZg"/>
+        <argument key="App\Controller\UtilisateurController::new" type="service" id=".service_locator.Hm8CUXV"/>
+        <argument key="App\Controller\UtilisateurController::newuser" type="service" id=".service_locator.Hm8CUXV"/>
         <argument key="App\Controller\UtilisateurController::show" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\CompteController:delete" type="service" id=".service_locator.M30T2zO"/>
         <argument key="App\Controller\CompteController:edit" type="service" id=".service_locator.M30T2zO"/>
@@ -5291,8 +5286,8 @@
         <argument key="App\Controller\UtilisateurController:delete" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController:edit" type="service" id=".service_locator.kfbCA7i"/>
         <argument key="App\Controller\UtilisateurController:index" type="service" id=".service_locator.Dqh887e"/>
-        <argument key="App\Controller\UtilisateurController:new" type="service" id=".service_locator.jqEEfZg"/>
-        <argument key="App\Controller\UtilisateurController:newuser" type="service" id=".service_locator.jqEEfZg"/>
+        <argument key="App\Controller\UtilisateurController:new" type="service" id=".service_locator.Hm8CUXV"/>
+        <argument key="App\Controller\UtilisateurController:newuser" type="service" id=".service_locator.Hm8CUXV"/>
         <argument key="App\Controller\UtilisateurController:show" type="service" id=".service_locator.kfbCA7i"/>
       </argument>
     </service>
@@ -5581,12 +5576,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.kqRNA8V"/>
+      <argument type="service" id=".service_locator.HzIQWzW"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.kqRNA8V"/>
+      <argument type="service" id=".service_locator.HzIQWzW"/>
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -6045,7 +6040,7 @@
     <service id="fos_rest.inflector" alias="fos_rest.inflector.doctrine"/>
     <service id="sensio_framework_extra.converter.doctrine.orm.expression_language" alias="sensio_framework_extra.converter.doctrine.orm.expression_language.default" public="false"/>
     <service id="sensio_framework_extra.security.expression_language" alias="sensio_framework_extra.security.expression_language.default" public="false"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.kqRNA8V"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.HzIQWzW"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>
