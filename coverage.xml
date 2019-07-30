@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="App\Tests\UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.550101">
+    <testcase name="testNew" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="9" assertions="1" time="0.416258"/>
+    <testcase name="testNewadmin" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="26" assertions="1" time="0.133843"/>
+  </testsuite>
+</testsuites>

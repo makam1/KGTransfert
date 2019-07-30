@@ -6,7 +6,19 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class PartenaireTest extends WebTestCase
 {
+
+
     public function testIndex()
+    {
+        $client = static::createClient();
+        $crawler = $client->request('GET', '/api/partenaire');
+
+        $rep=$client->getResponse();
+        $this->assertSame(201,$client->getResponse()->getStatusCode());
+       // $this->assertJsonStringEqualsJsonString($jsonstring,$rep->getContent());
+    }
+
+    public function testNew()
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/api/partenaires');
@@ -23,7 +35,7 @@ class PartenaireTest extends WebTestCase
         $rep=$client->getResponse();
         $this->assertSame(201,$client->getResponse()->getStatusCode());
         $this->assertJsonStringEqualsJsonString($jsonstring,$rep->getContent( ));
-    }
+    } 
 
     
 }
