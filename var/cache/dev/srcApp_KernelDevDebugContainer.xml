@@ -2345,7 +2345,7 @@
       <tag name="console.command" command="server:run"/>
       <argument>/home/mak/Filrouge/public</argument>
       <argument>dev</argument>
-      <argument>/home/mak/Filrouge</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
       <call method="setName">
         <argument>server:run</argument>
       </call>
@@ -2354,21 +2354,21 @@
       <tag name="console.command" command="server:start"/>
       <argument>/home/mak/Filrouge/public</argument>
       <argument>dev</argument>
-      <argument>/home/mak/Filrouge</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
-      <argument>/home/mak/Filrouge</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
-      <argument>/home/mak/Filrouge</argument>
+      <argument>/home/mak/Filrouge/var/cache</argument>
       <call method="setName">
         <argument>server:status</argument>
       </call>

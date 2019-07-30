@@ -38,7 +38,7 @@ class DepotController extends AbstractController
         $form = $this->createForm(DepotType::class,$depot);
         $data=json_decode($request->getContent(), true);
         $depot->setDate(new \Datetime());
-        $form->submit($data);
+        if($form->submit($data)->isValid() ){
             $compte=$depot->getCompte();
             $compte->setSolde($compte->getSolde()+$depot->getMontant());
             $entityManager = $this->getDoctrine()->getManager();
@@ -47,6 +47,13 @@ class DepotController extends AbstractController
             $entityManager->flush();
                   
         return new Response('Le dépôt a été effectué',Response::HTTP_CREATED);
+        }
+        $data = [
+            'status' => 500,
+            'message' => 'Vous devez renseigner le montant et le compte où doit être effectuer le dépot '
+        ];
+        return new Response($data, 500);
+
     }
 
     /**

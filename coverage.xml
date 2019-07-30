@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="1.363113">
+    <testsuite name="App\Tests\ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="1.363113">
+      <testcase name="testAjoutPartenaire" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="10" assertions="1" time="1.139986"/>
+      <testcase name="testAjoutCompte" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="30" assertions="1" time="0.106813"/>
+      <testcase name="testAjoutDepot" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="49" assertions="1" time="0.116314"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
