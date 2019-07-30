@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1564453475">
-  <project timestamp="1564453475">
+<coverage generated="1564480366">
+  <project timestamp="1564480366">
     <package name="App\Controller">
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Controller/CompteController.php">
         <class name="App\Controller\CompteController" namespace="App\Controller">
@@ -183,17 +183,17 @@
       </file>
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Controller/UtilisateurController.php">
         <class name="App\Controller\UtilisateurController" namespace="App\Controller">
-          <metrics complexity="7" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="5" elements="45" coveredelements="5"/>
+          <metrics complexity="7" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="0" elements="45" coveredelements="0"/>
         </class>
         <line num="26" type="method" name="index" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="28" type="stmt" count="0"/>
         <line num="29" type="stmt" count="0"/>
-        <line num="36" type="method" name="new" visibility="public" complexity="1" crap="1.20" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="39" type="stmt" count="1"/>
-        <line num="40" type="stmt" count="1"/>
-        <line num="41" type="stmt" count="1"/>
-        <line num="42" type="stmt" count="1"/>
+        <line num="36" type="method" name="new" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
         <line num="43" type="stmt" count="0"/>
         <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="0"/>
@@ -230,7 +230,7 @@
         <line num="104" type="stmt" count="0"/>
         <line num="105" type="stmt" count="0"/>
         <line num="108" type="stmt" count="0"/>
-        <metrics loc="110" ncloc="89" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="5" elements="45" coveredelements="5"/>
+        <metrics loc="110" ncloc="89" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="39" coveredstatements="0" elements="45" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Entity">
@@ -485,12 +485,12 @@
       </file>
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Entity/Utilisateur.php">
         <class name="App\Entity\Utilisateur" namespace="App\Entity">
-          <metrics complexity="28" methods="20" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="7" elements="50" coveredelements="14"/>
+          <metrics complexity="28" methods="20" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="0" elements="50" coveredelements="0"/>
         </class>
         <line num="64" type="method" name="getId" visibility="public" complexity="2" crap="6" count="0"/>
         <line num="66" type="stmt" count="0"/>
-        <line num="69" type="method" name="getLogin" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="71" type="stmt" count="1"/>
+        <line num="69" type="method" name="getLogin" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="71" type="stmt" count="0"/>
         <line num="74" type="method" name="setLogin" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="76" type="stmt" count="0"/>
         <line num="78" type="stmt" count="0"/>
@@ -503,8 +503,8 @@
         <line num="103" type="method" name="setRoles" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="105" type="stmt" count="0"/>
         <line num="107" type="stmt" count="0"/>
-        <line num="113" type="method" name="getPassword" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="115" type="stmt" count="1"/>
+        <line num="113" type="method" name="getPassword" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="115" type="stmt" count="0"/>
         <line num="118" type="method" name="setPassword" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="120" type="stmt" count="0"/>
         <line num="122" type="stmt" count="0"/>
@@ -512,32 +512,32 @@
         <line num="131" type="stmt" count="0"/>
         <line num="136" type="method" name="eraseCredentials" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="140" type="stmt" count="0"/>
-        <line num="142" type="method" name="getNom" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="144" type="stmt" count="1"/>
+        <line num="142" type="method" name="getNom" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="144" type="stmt" count="0"/>
         <line num="147" type="method" name="setNom" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="149" type="stmt" count="0"/>
         <line num="151" type="stmt" count="0"/>
-        <line num="154" type="method" name="getEmail" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="156" type="stmt" count="1"/>
+        <line num="154" type="method" name="getEmail" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="156" type="stmt" count="0"/>
         <line num="159" type="method" name="setEmail" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="161" type="stmt" count="0"/>
         <line num="163" type="stmt" count="0"/>
-        <line num="166" type="method" name="getTelephone" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="168" type="stmt" count="1"/>
+        <line num="166" type="method" name="getTelephone" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="168" type="stmt" count="0"/>
         <line num="171" type="method" name="setTelephone" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="173" type="stmt" count="0"/>
         <line num="175" type="stmt" count="0"/>
-        <line num="178" type="method" name="getStatut" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="180" type="stmt" count="1"/>
+        <line num="178" type="method" name="getStatut" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="180" type="stmt" count="0"/>
         <line num="183" type="method" name="setStatut" visibility="public" complexity="1" crap="2" count="0"/>
         <line num="185" type="stmt" count="0"/>
         <line num="187" type="stmt" count="0"/>
-        <line num="190" type="method" name="getPartenaire" visibility="public" complexity="2" crap="2" count="1"/>
-        <line num="192" type="stmt" count="1"/>
+        <line num="190" type="method" name="getPartenaire" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="192" type="stmt" count="0"/>
         <line num="195" type="method" name="setPartenaire" visibility="public" complexity="2" crap="6" count="0"/>
         <line num="197" type="stmt" count="0"/>
         <line num="199" type="stmt" count="0"/>
-        <metrics loc="201" ncloc="141" classes="1" methods="20" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="7" elements="50" coveredelements="14"/>
+        <metrics loc="201" ncloc="141" classes="1" methods="20" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="0" elements="50" coveredelements="0"/>
       </file>
     </package>
     <package name="App\Form">
@@ -606,23 +606,23 @@
       </file>
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Form/UtilisateurType.php">
         <class name="App\Form\UtilisateurType" namespace="App\Form">
-          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
         </class>
-        <line num="15" type="method" name="buildForm" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="18" type="stmt" count="1"/>
-        <line num="19" type="stmt" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <line num="21" type="stmt" count="1"/>
-        <line num="22" type="stmt" count="1"/>
-        <line num="23" type="stmt" count="1"/>
-        <line num="24" type="stmt" count="1"/>
-        <line num="25" type="stmt" count="1"/>
-        <line num="28" type="stmt" count="1"/>
-        <line num="30" type="method" name="configureOptions" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="32" type="stmt" count="1"/>
-        <line num="33" type="stmt" count="1"/>
-        <line num="35" type="stmt" count="1"/>
-        <metrics loc="36" ncloc="36" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="14" coveredelements="14"/>
+        <line num="15" type="method" name="buildForm" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="30" type="method" name="configureOptions" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <metrics loc="36" ncloc="36" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="0" elements="14" coveredelements="0"/>
       </file>
     </package>
     <package name="App">
@@ -630,14 +630,14 @@
         <class name="App\Kernel" namespace="App">
           <metrics complexity="6" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="6" elements="23" coveredelements="8"/>
         </class>
-        <line num="18" type="method" name="registerBundles" visibility="public" complexity="3" crap="3" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <line num="21" type="stmt" count="1"/>
-        <line num="22" type="stmt" count="1"/>
-        <line num="23" type="stmt" count="1"/>
-        <line num="26" type="stmt" count="1"/>
-        <line num="28" type="method" name="getProjectDir" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="30" type="stmt" count="1"/>
+        <line num="18" type="method" name="registerBundles" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="28" type="method" name="getProjectDir" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="30" type="stmt" count="2"/>
         <line num="33" type="method" name="configureContainer" visibility="protected" complexity="1" crap="2" count="0"/>
         <line num="35" type="stmt" count="0"/>
         <line num="36" type="stmt" count="0"/>
@@ -927,12 +927,12 @@
       </file>
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Repository/PartenaireRepository.php">
         <class name="App\Repository\PartenaireRepository" namespace="App\Repository">
-          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
         </class>
-        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="19" type="stmt" count="1"/>
-        <line num="20" type="stmt" count="1"/>
-        <metrics loc="50" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+        <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <metrics loc="50" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
       </file>
       <file name="/home/dmg/Documents/Sonatel Academy/KGtranfert/src/Repository/TypeoperationRepository.php">
         <class name="App\Repository\TypeoperationRepository" namespace="App\Repository">
@@ -978,6 +978,6 @@
         <metrics loc="63" ncloc="24" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="8" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="43" loc="2781" ncloc="1952" classes="43" methods="185" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="520" coveredstatements="32" elements="705" coveredelements="44"/>
+    <metrics files="43" loc="2781" ncloc="1952" classes="43" methods="185" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="520" coveredstatements="6" elements="705" coveredelements="8"/>
   </project>
 </coverage>

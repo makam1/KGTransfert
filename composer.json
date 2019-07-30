@@ -75,5 +75,11 @@
             "allow-contrib": false,
             "require": "4.3.*"
         }
+    },
+    "repositories": {
+        "phpunit-bridge": {
+            "type": "path",
+            "url": "/home/dmg/Documents/Sonatel Academy/KGtranfert/vendor/symfony/phpunit-bridge"
+        }
     }
 }
