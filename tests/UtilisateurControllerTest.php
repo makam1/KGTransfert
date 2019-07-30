@@ -20,7 +20,7 @@ class UtilisateurControllerTest extends WebTestCase
             }'
     );
     $client->getResponse();
-    $this->assertSame(401,$client->getResponse()->getStatusCode());
+    $this->assertSame(500,$client->getResponse()->getStatusCode());
     }
 
     public function testNewadmin()
@@ -37,6 +37,6 @@ class UtilisateurControllerTest extends WebTestCase
             }'
     );
     $client->getResponse();
-    $this->assertSame(401,$client->getResponse()->getStatusCode());
+    $this->assertSame(500,$client->getResponse()->getStatusCode());
     }
 }
