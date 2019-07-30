@@ -38,13 +38,19 @@ class PartenaireController extends AbstractController
         $partenaire = new Partenaire();
         $form = $this->createForm(PartenaireType::class, $partenaire);
         $data=json_decode($request->getContent(),true);
-        $form->submit($data);
+        if($form->submit($data)){
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($partenaire);
             $entityManager->flush();
         
         return new Response('Le partenaire a été ajouté',Response::HTTP_CREATED);
+    }
+
+
+        return new Response('Vous devez renseigner les informations du partenaire',Response::HTTP_CREATED );
+
+
     }
 
     /**

@@ -40,13 +40,16 @@ class CompteController extends AbstractController
         $form = $this->createForm(CompteType::class,$compte);
         $data=json_decode($request->getContent(), true);
         
-        $form->submit($data);
+        if($form->submit($data)){
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($compte);
             $entityManager->flush();
         
         return new Response('Le compte a été ajouté',Response::HTTP_CREATED);
+    }
+       
+        return new Response('Vous devez renseigner les informations du compte ',Response::HTTP_CREATED );
     }
 
     /**

@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerDLYOxir\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'DLYOxir',
-    'container.build_id' => '1f763283',
-    'container.build_time' => 1564478239,
+    'container.build_id' => '441f9b5a',
+    'container.build_time' => 1564480869,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerDLYOxir');
