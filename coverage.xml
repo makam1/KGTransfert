@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Project Test Suite" tests="3" assertions="3" errors="0" failures="3" skipped="0" time="0.724180">
-    <testsuite name="App\Tests\ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" tests="3" assertions="3" errors="0" failures="3" skipped="0" time="0.724180">
-      <testcase name="testAjoutPartenaire" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="10" assertions="1" time="0.523839">
+  <testsuite name="Project Test Suite" tests="3" assertions="3" errors="0" failures="3" skipped="0" time="0.743178">
+    <testsuite name="App\Tests\ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" tests="3" assertions="3" errors="0" failures="3" skipped="0" time="0.743178">
+      <testcase name="testAjoutPartenaire" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="10" assertions="1" time="0.507618">
         <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutPartenaire
-Failed asserting that 500 is identical to 200.
+Failed asserting that 500 is identical to 201.
 
-/home/mak/Filrouge/tests/PartenaireTest.php:26
+/home/mak/Filrouge/tests/PartenaireTest.php:24
 </failure>
       </testcase>
-      <testcase name="testAjoutCompte" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="30" assertions="1" time="0.088992">
+      <testcase name="testAjoutCompte" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="28" assertions="1" time="0.089830">
         <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutCompte
 Failed asserting that 500 is identical to 200.
 
-/home/mak/Filrouge/tests/PartenaireTest.php:46
+/home/mak/Filrouge/tests/PartenaireTest.php:44
 </failure>
       </testcase>
-      <testcase name="testAjoutDepot" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="49" assertions="1" time="0.111349">
+      <testcase name="testAjoutDepot" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/mak/Filrouge/tests/PartenaireTest.php" line="47" assertions="1" time="0.145730">
         <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutDepot
-Failed asserting that 500 is identical to 200.
+Failed asserting that 500 is identical to 201.
 
-/home/mak/Filrouge/tests/PartenaireTest.php:64
+/home/mak/Filrouge/tests/PartenaireTest.php:62
 </failure>
       </testcase>
     </testsuite>
