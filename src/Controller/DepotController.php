@@ -38,7 +38,7 @@ class DepotController extends AbstractController
         $form = $this->createForm(DepotType::class,$depot);
         $data=json_decode($request->getContent(), true);
         $depot->setDate(new \Datetime());
-        if($form->submit($data)->isValid() ){
+        if($form->submit($data)){
             $compte=$depot->getCompte();
             $compte->setSolde($compte->getSolde()+$depot->getMontant());
             $entityManager = $this->getDoctrine()->getManager();

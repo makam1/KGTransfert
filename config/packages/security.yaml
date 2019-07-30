@@ -24,6 +24,7 @@ security:
                 failure_handler:          lexik_jwt_authentication.handler.authentication_failure
            
         api:
+            http_basic: ~
             pattern:   ^/api
             stateless: true
             guard:
