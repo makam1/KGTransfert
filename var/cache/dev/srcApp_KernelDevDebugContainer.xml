@@ -2758,7 +2758,7 @@
       <argument type="iterator">
         <argument key="security.firewall.map.context.dev" type="service" id=".security.request_matcher.Iy.T22O"/>
         <argument key="security.firewall.map.context.login" type="service" id=".security.request_matcher.HeUdK73"/>
-        <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.QzXwGYw"/>
+        <argument key="security.firewall.map.context.api" type="service" id=".security.request_matcher.p4VlLPC"/>
       </argument>
     </service>
     <service id="security.firewall.context" class="Symfony\Bundle\SecurityBundle\Security\FirewallContext" public="false" abstract="true">
@@ -3312,7 +3312,7 @@
     <service id="security.firewall.map.config.api" class="Symfony\Bundle\SecurityBundle\Security\FirewallConfig" public="false">
       <argument>api</argument>
       <argument>security.user_checker</argument>
-      <argument>.security.request_matcher.QzXwGYw</argument>
+      <argument>.security.request_matcher.p4VlLPC</argument>
       <argument>true</argument>
       <argument>true</argument>
       <argument>security.user.provider.concrete.app_user_provider</argument>
@@ -3326,8 +3326,8 @@
       </argument>
       <argument>null</argument>
     </service>
-    <service id=".security.request_matcher.QzXwGYw" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api/ab</argument>
+    <service id=".security.request_matcher.p4VlLPC" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/api</argument>
     </service>
     <service id="security.authentication.provider.guard.api" class="Symfony\Component\Security\Guard\Provider\GuardAuthenticationProvider" public="false">
       <argument type="iterator">
