@@ -25,7 +25,7 @@ security:
            
         api:
             http_basic: ~
-            pattern:   ^/api/ab
+            pattern:   ^/api
             stateless: true
             guard:
                 authenticators:
