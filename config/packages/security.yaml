@@ -40,10 +40,10 @@ security:
         - { path: ^/api/depot,                roles: ROLE_SUPERADMIN }
         - { path: ^/api/user/newadmin,        roles: ROLE_SUPERADMIN }
         - { path: ^/api/user,                 roles: ROLE_ADMINP }
-        #- { path: ^/api/user/,                roles: ROLE_ADMINP }
-            
-        #- { path: ^/api,                      roles: ROLE_ADMIN}
         - { path: ^/api/user/newuser,         roles: ROLE_ADMINP }
+
+        #- { path: ^/api/user/,                roles: ROLE_ADMINP }  
+        #- { path: ^/api,                      roles: ROLE_ADMIN}
         #- { path: ^/api,                     roles: ROLE_USER }
         #- { path: ^/api/login,               roles: IS_AUTHENTICATED_ANONYMOUSLY }
         #- { path: ^/api,                     roles: IS_AUTHENTICATED_FULLY }

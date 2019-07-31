@@ -71,5 +71,6 @@ class PartenaireControllerTest extends WebTestCase
         var_dump($rep);
         $this->assertSame(201,$client->getResponse()->getStatusCode());
     }
-    
-}
+     
+ }
+ 
