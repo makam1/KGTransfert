@@ -15,15 +15,10 @@ class UtilisateurControllerTest extends WebTestCase
         ] 
 
         );
-<<<<<<< HEAD
-        $client->request('POST', '/api/user/newuser',[],[],['CONTENT_TYPE'=>"application/json"],'{
-            "login":"admi",
-=======
         $client->request('POST', '/api/user/newadmin',[],[],
         ['CONTENT_TYPE'=>"application/json"],
         '{
             "login":"adm90pyt",
->>>>>>> 9aa8527f346668cf16180104c7e5ca2ffd5bccf9
             "password":"123",
             "nom":"maman fatou",
             "email":"fatout@gmail.com",
