@@ -1,32 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Project Test Suite" tests="5" assertions="5" errors="0" failures="3" skipped="0" time="6.249060">
-    <testsuite name="App\Tests\ControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php" tests="3" assertions="3" errors="0" failures="3" skipped="0" time="3.238540">
-      <testcase name="testAjoutPartenaire" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php" line="10" assertions="1" time="2.046996">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutPartenaire
-Failed asserting that 500 is identical to 201.
-
-/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php:24
-</failure>
+  <testsuite name="Project Test Suite" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="2.028738">
+    <testsuite name="App\Tests\UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="2.028738">
+      <testcase name="testNew" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="10" assertions="1" time="1.262454">
+        <system-out>/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php:32:
+class Symfony\Component\HttpFoundation\Response#7623 (6) {
+  public $headers =&gt;
+  class Symfony\Component\HttpFoundation\ResponseHeaderBag#7579 (5) {
+    protected $computedCacheControl =&gt;
+    array(2) {
+      'no-cache' =&gt;
+      bool(true)
+      'private' =&gt;
+      bool(true)
+    }
+    protected $cookies =&gt;
+    array(0) {
+    }
+    protected $headerNames =&gt;
+    array(5) {
+      'cache-control' =&gt;
+      string(13) "Cache-Control"
+      'date' =&gt;
+      string(4) "Date"
+      'content-type' =&gt;
+      string(12) "Content-Type"
+      'link' =&gt;
+      string(4) "Link"
+      'x-robots-tag' =&gt;
+      string(12) "X-Robots-Tag"
+    }
+    protected $headers =&gt;
+    array(5) {
+      'cache-control' =&gt;
+      array(1) {
+        ...
+      }
+      'date' =&gt;
+      array(1) {
+        ...
+      }
+      'content-type' =&gt;
+      array(1) {
+        ...
+      }
+      'link' =&gt;
+      array(1) {
+        ...
+      }
+      'x-robots-tag' =&gt;
+      array(1) {
+        ...
+      }
+    }
+    protected $cacheControl =&gt;
+    array(0) {
+    }
+  }
+  protected $content =&gt;
+  string(18) "Administra ajouter"
+  protected $version =&gt;
+  string(3) "1.1"
+  protected $statusCode =&gt;
+  int(201)
+  protected $statusText =&gt;
+  string(7) "Created"
+  protected $charset =&gt;
+  string(5) "UTF-8"
+}
+</system-out>
       </testcase>
-      <testcase name="testAjoutCompte" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php" line="28" assertions="1" time="0.479764">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutCompte
-Failed asserting that 500 is identical to 200.
-
-/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php:44
-</failure>
+      <testcase name="testNewadmin" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="36" assertions="1" time="0.766284">
+        <system-out>/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php:57:
+class Symfony\Component\HttpFoundation\Response#707 (6) {
+  public $headers =&gt;
+  class Symfony\Component\HttpFoundation\ResponseHeaderBag#797 (5) {
+    protected $computedCacheControl =&gt;
+    array(2) {
+      'no-cache' =&gt;
+      bool(true)
+      'private' =&gt;
+      bool(true)
+    }
+    protected $cookies =&gt;
+    array(0) {
+    }
+    protected $headerNames =&gt;
+    array(5) {
+      'cache-control' =&gt;
+      string(13) "Cache-Control"
+      'date' =&gt;
+      string(4) "Date"
+      'content-type' =&gt;
+      string(12) "Content-Type"
+      'link' =&gt;
+      string(4) "Link"
+      'x-robots-tag' =&gt;
+      string(12) "X-Robots-Tag"
+    }
+    protected $headers =&gt;
+    array(5) {
+      'cache-control' =&gt;
+      array(1) {
+        ...
+      }
+      'date' =&gt;
+      array(1) {
+        ...
+      }
+      'content-type' =&gt;
+      array(1) {
+        ...
+      }
+      'link' =&gt;
+      array(1) {
+        ...
+      }
+      'x-robots-tag' =&gt;
+      array(1) {
+        ...
+      }
+    }
+    protected $cacheControl =&gt;
+    array(0) {
+    }
+  }
+  protected $content =&gt;
+  string(19) "Utilisateur ajouter"
+  protected $version =&gt;
+  string(3) "1.1"
+  protected $statusCode =&gt;
+  int(201)
+  protected $statusText =&gt;
+  string(7) "Created"
+  protected $charset =&gt;
+  string(5) "UTF-8"
+}
+</system-out>
       </testcase>
-      <testcase name="testAjoutDepot" class="App\Tests\ControllerTest" classname="App.Tests.ControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php" line="47" assertions="1" time="0.711780">
-        <failure type="PHPUnit\Framework\ExpectationFailedException">App\Tests\ControllerTest::testAjoutDepot
-Failed asserting that 500 is identical to 201.
-
-/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/PartenaireControllerTest.php:62
-</failure>
-      </testcase>
-    </testsuite>
-    <testsuite name="App\Tests\UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="3.010520">
-      <testcase name="testNew" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="9" assertions="1" time="1.392960"/>
-      <testcase name="testNewadmin" class="App\Tests\UtilisateurControllerTest" classname="App.Tests.UtilisateurControllerTest" file="/home/dmg/Documents/Sonatel Academy/KGtranfert/tests/UtilisateurControllerTest.php" line="26" assertions="1" time="1.617560"/>
     </testsuite>
   </testsuite>
 </testsuites>
