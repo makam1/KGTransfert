@@ -40,8 +40,8 @@ class CompteController extends AbstractController
         $form = $this->createForm(CompteType::class,$compte);
         $data=json_decode($request->getContent(), true);
         
-        if($form->submit($data)){
-
+        $form->submit($data);
+        if($form->isSubmitted()){
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($compte);
             $entityManager->flush();

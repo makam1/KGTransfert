@@ -35,11 +35,14 @@ class DepotController extends AbstractController
     public function new(Request $request,SerializerInterface $serializer,EntityManagerInterface $entityManager ): Response
     {
         $depot = new Depot();
+      
         $form = $this->createForm(DepotType::class,$depot);
         $data=json_decode($request->getContent(), true);
         $depot->setDate(new \Datetime());
-        if($form->submit($data)){
-            $compte=$depot->getCompte();
+       
+        $form->submit($data);
+        if($form->isSubmitted()){
+            $compte= $depot->getCompte();
             $compte->setSolde($compte->getSolde()+$depot->getMontant());
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($compte);
@@ -48,6 +51,7 @@ class DepotController extends AbstractController
                   
         return new Response('Le dépôt a été effectué',Response::HTTP_CREATED);
         }
+
         $data = [
             'status' => 500,
             'message' => 'Vous devez renseigner le montant et le compte où doit être effectuer le dépot '

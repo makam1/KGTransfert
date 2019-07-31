@@ -14,7 +14,7 @@ class UtilisateurControllerTest extends WebTestCase
         ]
 
         );
-        $client->request('POST', '/api/user/newadmin',[],[],['CONTENT_TYPE'=>"application/json"],'{
+        $client->request('POST', '/api/user/newuser',[],[],['CONTENT_TYPE'=>"application/json"],'{
             "login":"admi",
             "password":"123",
             "nom":"maman fatou",

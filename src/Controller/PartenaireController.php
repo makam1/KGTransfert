@@ -38,7 +38,8 @@ class PartenaireController extends AbstractController
         $partenaire = new Partenaire();
         $form = $this->createForm(PartenaireType::class, $partenaire);
         $data=json_decode($request->getContent(),true);
-        if($form->submit($data)){
+        $form->submit($data);
+        if($form->isSubmitted()){
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($partenaire);

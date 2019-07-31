@@ -4,10 +4,10 @@ namespace App\Tests;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class ControllerTest extends WebTestCase
+class PartenaireControllerTest extends WebTestCase
 {
-  
-    public function testAjoutPartenaire()
+
+     public function testAjoutPartenaire()
     {
         $client = static::createClient([],[
             'PHP_AUTH_USER'=>'mak',
@@ -16,18 +16,16 @@ class ControllerTest extends WebTestCase
 
         );
         $crawler = $client->request('POST', '/api/partenaire/new',[],[],
-        ['CONTENT_TYPE'=>"application/json"],"
+        ['CONTENT_TYPE'=>"application/json"],'
 
             {
-                \"raisonsociale\":\"dmg-service\",
-                \"ninea\":\"0054930Y\",
-                \"adresse\":\"dakar\"
+                "raisonsociale":"mak-service",
+                "ninea":"0054930Y",
+                "adresse":"rufisque"
 
-            }");
+            }');
         $rep=$client->getResponse();
-       // var_dump($rep);
         $this->assertSame(201,$client->getResponse()->getStatusCode());
-        //$this->assertJsonStringEqualsJsonString($jsonstring,$rep->getContent( ));
     }
 
     public function testAjoutCompte()
@@ -39,21 +37,20 @@ class ControllerTest extends WebTestCase
 
         );
         $crawler = $client->request('POST', '/api/compte/new',[],[],
-        ['CONTENT_TYPE'=>"application/json"]);
-        $jsonstring="[
+        ['CONTENT_TYPE'=>"application/json"],'
 
             {
-            
-                \"numerocompte\":30993,
-                \"solde\":1000,
-                \"partenaire\":1
-
-            }
-        ]";
+                    "numerocompte":1148,
+                    "solde":0,
+                    "partenaire":5
+                    
+            }');
         $rep=$client->getResponse();
+        var_dump($rep);
         $this->assertSame(201,$client->getResponse()->getStatusCode());
-        $this->assertJsonStringEqualsJsonString($jsonstring,$rep->getContent( ));
     }
+
+
     public function testAjoutDepot()
     {
         $client = static::createClient([],[
@@ -63,18 +60,16 @@ class ControllerTest extends WebTestCase
 
         );
         $crawler = $client->request('POST', '/api/depot/new',[],[],
-        ['CONTENT_TYPE'=>"application/json"]);
-        $jsonstring="[
+        ['CONTENT_TYPE'=>"application/json"],'
 
             {
-                \"montant\":50000,
-                \"compte\":1
-
-            }
-        ]";
+                "montant":30000,
+                "compte":1
+                    
+            }');
         $rep=$client->getResponse();
+        var_dump($rep);
         $this->assertSame(201,$client->getResponse()->getStatusCode());
-        $this->assertJsonStringEqualsJsonString($jsonstring,$rep->getContent( ));
     }
     
 }
